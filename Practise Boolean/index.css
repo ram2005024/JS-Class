@@ -1,0 +1,14 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+.popUp{
+  display:block;
+  font-size: 2.5rem;
+  background-color: aqua;
+  font-family: "Roborto", sans-serif;
+  box-shadow: 0px 0px 3px 2px;
+  
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="feb151.css">
+</head>
+<body>
+  <button onclick="
+  displayMessage('Ram Sharma');
+
+  
+  
+  
+  ">
+    Click me to Display Message
+  </button>
+  <h1 class="headerMessage"></h1>
+  <button class="onClickButton" onclick="onClickFunction();
+  "></button>
+
+  <script>
+   
+    let date=new Date();
+    let clickCount=localStorage.getItem('clickCount')??0;
+ function onClickFunction(){
+  clickCount++;
+localStorage.setItem('clickCount',clickCount);
+updateColor();
+}
+updateColor();
+function updateColor(){
+  var hold=document.querySelector('.onClickButton');
+  // clickCount=localStorage.getItem('clickCount')??0;
+  if(clickCount%2===0){
+    hold.classList.remove('js-odd');
+    hold.classList.add('js-even');
+  }
+  else{
+    hold.classList.remove('js-even');
+    hold.classList.add('js-odd');
+  }
+ hold.innerText=clickCount;
+}
+
+
+function displayMessage(name){
+  let message;
+if(date.getHours()<12){
+message=`Good Morning ${name}`;
+}
+else if(date.getHours()>=12&&date.getHours()<16){
+ message=`Good Afternon ${name}`;
+}
+else{
+message=`Good Evening ${name}`;
+}
+document.querySelector('.headerMessage').innerText=message;
+}
+  </script>
+</body>
+</html>

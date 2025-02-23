@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    let viewers=900000;
+    let ticketPrice=100;
+    let movie={
+movieName:'Cyrus',
+directorName:'Ram Sharma',
+movieDuration:'5 hrs 30mins',
+//Ratings of the movie
+rating:{
+  ratingByPeoples:10,
+  ratingByExperts:8,
+  moviesIncomeCount: function displayCount() {
+    return viewers * ticketPrice;
+  }},
+  displayDirectorName: function display(){
+    return this.directorName;
+  }
+}
+console.log(movie);
+console.log(movie.displayDirectorName());
+console.log(`The income by the movie is ${movie.rating.moviesIncomeCount()}`);
+console.log(movie.rating);
+  </script>
+</body>
+</html>

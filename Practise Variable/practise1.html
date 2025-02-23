@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="para1"></p>
+  <p id="costOfBag"></p>
+  <script>
+     const myName="Ram Sharma";
+    document.querySelector('#para1').innerText=`My name is ${myName}`;
+   
+    console.log('My name is '+myName);
+    let bagPrice=15599;
+let bagDiscountPercent=10/100;
+let bagPriceWithDiscount=Math.round(bagPrice-bagPrice*bagDiscountPercent);
+document.querySelector('#costOfBag').innerText=`The cost of the bag is ${bagPriceWithDiscount}`;
+const gst=10/100;
+console.log('The price of the Bag was '+bagPriceWithDiscount ); 
+console.log(eval('45'+90));
+  </script>
+</body>
+</html>

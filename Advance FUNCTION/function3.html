@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+  // let array=[1,2,3,4,5,6,7,8,9];
+  // let newArray=array.map(num=>{
+  //   return num*num;
+  // })
+  // let array=[1,2,3,4,5,6,7,8,9];
+  // let newArray=array.filter(num=>{
+  //   if(num%2==0){
+  //     return num;
+  //   }
+  // }
+  // )
+  // console.log(array);
+  // console.log(newArray);
+
+let array = [1, 2, 3, 4, 5, 6];
+
+// let findTheNumber = () => {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === 5) {
+//       return `Number ${array[i]} is found at the index ${i}`;
+//     }
+//   }
+//   return 'Number not found';
+// };
+
+let find=array.forEach((num,index)=>{
+  if(num===5){
+    return `Number ${num} found at the index ${index}`
+  }
+console.log('No is not found')});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" id="myLink" href="dom.css">
+  <title>DOM CONCEPTS</title>
+</head>
+<body>
+  <div class="cont">
+    <button class="myButton button1">Click me to get my Link</button>
+<p class="para"></p>
+  </div>
+  <script>
+//     function documentLink(){
+// var x=document.querySelector('#myLink').href="styles2.css";
+// document.querySelector('.para').innerHTML=x;
+//     }
+
+// document.querySelector('.myButton').innerHTML+="<p>hello world i just dived into the world of JS </p>";
+// document.querySelector('button').classList.remove('button1');
+// console.log(document.querySelector('button').classList);
+let a=document.createElement('p');
+document.querySelector('.cont').appendChild(a);
+a.innerText='Hello World I just dived inot the world of JS';
+let para2=document.createElement('p');
+para2.innerText='Hello World I alos just dived into the world of CSS too.';
+document.querySelector('.cont').appendChild(para2);
+// document.querySelector(".cont").removeChild(a);
+document.querySelector('.cont').replaceChild(para2,a);
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.onClickButton{
+  height:2.5rem;
+  width:3rem;
+  font-size:2rem;
+}
+.js-odd{
+  background-color: pink;
+
+}
+.js-even{
+  background-color: blueviolet;
+}

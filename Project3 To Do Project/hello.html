@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hello.css">
+  <title>PractiseButton</title>
+</head>
+<body>
+  <button class="myButton" onclick="displayNumber();">
+  
+  </button>
+  <script>
+
+    let counter=JSON.parse(localStorage.getItem('counter'))||0;
+    updateColor(counter);
+    function displayNumber(){
+counter++;
+JSON.stringify(counter);
+localStorage.setItem('counter');
+updateColor(counter);
+    }
+    function updateColor(counter){
+if(counter%2==0){
+  document.querySelector('.myButton').classList.add('forEven');
+  document.querySelector('.myButton').classList.remove('forOdd');
+  document.querySelector('.myButton').innerText=counter;
+
+}
+else{
+    document.querySelector('.myButton').classList.add('forOdd');
+  document.querySelector('.myButton').classList.remove('forEven');
+    document.querySelector('.myButton').innerText=counter;
+}
+    }
+  </script>
+</body>
+</html>

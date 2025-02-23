@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+  <script>
+    // let item1={
+    //   type:'Shirt',
+    //   cost:'₹200',
+    //   quantity:5
+    // }
+    // console.log(item1);
+
+    // let obj1={
+    //   name:'Hari'
+    // }
+    // obj2={
+    //   name:'Pratap'
+    // }
+    // // obj2=obj1;
+    // console.log(`The name from the first object is ${obj1.name}\nThe name from the second object is ${obj2.name}`);
+
+    // let object={
+    //   name:'Pizza',
+    //   'delivery-time':'20minutes'
+    // }
+    // let timeToDeliver=' ';
+    // console.log(object[timeToDeliver]);
+
+//     let ob={
+//       message:'good job',
+//       status:'complete'
+//     };
+//  let {message,status}=ob;
+//     console.log(message, status);
+let product1={
+  name:'Ram Sharma',
+  age:21,
+  address:'Lamahi,Dang'
+}
+let product2={
+  name:'Ram Sharma',
+  age:21,
+  address:'Lamahi,Dang'
+}
+let product3={
+  name:'Pratap Ghimire',
+  age:21,
+  address:'Lamahi,Dang'
+}
+ function isIdenticalProduct(product1, product2) {
+  if (typeof product1 !== 'object' || typeof product2 !== 'object') {
+    console.warn('Objects wasnot created');
+    return false;  // Remove explicit return false
+  }
+  
+  if (product1 === product2) {
+    return true;
+  }
+  
+  if (product1.name === product2.name && product1.age === product2.age && product1.address === product2.address) {
+    return true;
+  }
+  
+  return false;
+}
+
+ console.log(isIdenticalProduct(product1,""));
+ console.log(isIdenticalProduct(product1,product3));
+ console.log(isIdenticalProduct(product1,product1));
+console.log(isIdenticalProduct(product3,product2));
+console.log(isIdenticalProduct(product2,product3));
+console.log(isIdenticalProduct(product1,product2));
+  </script>
+</body>
+</html>

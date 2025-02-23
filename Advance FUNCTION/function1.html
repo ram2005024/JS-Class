@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+let multiplyTwoNumbers = function(num1, num2) {
+    return num1 * num2;
+};
+
+let multiplyOfThreeNumbers = function(num1, num2, num3, productOfTwoNumbers) {
+    return productOfTwoNumbers(num1, num2) * num3;
+};
+
+console.log(multiplyOfThreeNumbers(4, 5, 2, multiplyTwoNumbers)); // Output: 40
+
+let multiplyOfFourNumbers = function(num1, num2, num3, num4, productOfTwoNumbers, productOfThreeNumbers) {
+    return productOfThreeNumbers(num1, num2, num3, productOfTwoNumbers) * num4;
+};
+
+console.log(multiplyOfFourNumbers(4, 5, 6, 7, multiplyTwoNumbers, multiplyOfThreeNumbers)); // Output: 840
+
+  </script>
+</body>
+</html>

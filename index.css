@@ -1,0 +1,18 @@
+#button1{
+  background-color: rgba(4, 250, 4, 0.772);
+    font-size:1.5rem;
+    border-radius: 10px;
+    border:solid rgba(4, 250, 4, 0.772) 1px;
+}
+#button2{
+  background-color: beige;
+      font-size: 1.5rem;
+      border-radius:15px;
+      width:300px;
+      text-transform: uppercase;
+}
+#button3{
+  background-color: aqua;
+  font-size: 1.5rem;
+    border-radius: 15px;
+}

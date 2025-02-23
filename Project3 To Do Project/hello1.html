@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, cumque!<h2 class="header2">I am previous Element</h2></div>
+
+
+  <script>
+newElement=document.createElement('h1');
+newElement.innerText='Hello I am just a newly added header element';
+document.querySelector('.mypara').appendChild(newElement);
+let previousElement=document.querySelector('.header2');
+document.querySelector('.mypara').replaceChild(newElement,previousElement);
+  </script>
+</body>
+</html>

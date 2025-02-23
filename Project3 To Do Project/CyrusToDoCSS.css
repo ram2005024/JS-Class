@@ -1,0 +1,80 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+.myTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+.choosingContainer{
+  margin:20px;
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  
+
+}
+.inputItem{
+  font-size:1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+      height: 50px;
+}
+.dateItem {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+      height: 50px;
+}
+.addItem {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width:100px;
+  height: 50px;
+  border-radius:30px;
+  background-color: brown;
+  color:white;
+
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  width:90vw;
+  margin-top:50px;
+}
+.choosedContainer{
+  display:flex;
+flex-direction: column;
+  width:100%;
+margin:20px;
+}
+.mainDiv{
+    display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom:10px;
+}
+.span{
+    font-size: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 50px;
+}
+.myDeleteButton{
+    font-size: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100px;
+      height: 50px;
+      border-radius: 30px;
+      background-color: brown;
+      color: white;
+}
+.inputSpan{
+  width:295.2px;
+  height: 50px;
+} 
+.dateSpan{
+  width:196.8px;
+  height:50px;
+}

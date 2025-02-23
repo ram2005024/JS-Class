@@ -1,0 +1,11 @@
+.forEven{
+  background-color: Yellow;
+}
+.forOdd{
+  background-color: pink;
+}
+.myButton{
+  font-size:1.5rem;
+  height:100px;
+  width:100px;
+}
