@@ -21,8 +21,13 @@
     h2Element.textContent='This is Ram Sharma'
 let buttonElement=document.querySelector('.myButton');
 buttonElement.addEventListener('click',()=>{
-document.body.replaceChild(h2Element,h1Element);
-})
+  if(document.body.contains(h1Element)){
+   document.body.replaceChild(h2Element,h1Element); 
+  }
+  else{
+    document.body.replaceChild(h1Element,h2Element);
+  }
+});
   </script>
 </body>
 </html>
