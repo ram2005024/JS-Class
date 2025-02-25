@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.myDiv{
+  background-color: pink;
+  border:solid black 2px;
+
+}
+.myButton{
+  font-size:25px;
+  background-color: purple;
+  color:yellow;
+  border-radius: 10%;
+}
+  </style>
+</head>
+<body>
+  <div class="myDiv">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quia animi ea nostrum voluptates veritatis ratione quae quod deleniti assumenda!
+  </div>
+<button class="myButton">Click me to change the text!!</button>
+  <script>
+let button=document.querySelector('.myButton');
+button.addEventListener('click',()=>{
+  document.querySelector('.myDiv').innerText="Hello This is the Changed Text and Welcome to the pratise session of Shekhar Sharma";
+})
+  </script>
+</body>
+</html>
