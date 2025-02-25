@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <ul class="myList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+<button class="myButton">
+  Delete
+</button>
+  <script>
+let listElement=document.querySelector('.myList');
+let buttonElement=documnet.querySelector('.myButton');
+buttonElement.addEventListener('click',()=>{
+  listElement.innerHtml=`<ul class="myList">
+    <li>Apple</li>
+    <li>Banana</li>
+  </ul>`;
+});
+  </script>
+</body>
+</html>
