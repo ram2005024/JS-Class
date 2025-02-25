@@ -9,23 +9,20 @@
   </style>
 </head>
 <body>
-  <ul class="myList">
-    <li>Apple</li>
-    <li>Banana</li>
-    <li>Mango</li>
-  </ul>
+  <h1 class="myHeader">
+    This is Ram Sharma
+  </h1>
 <button class="myButton">
-  Delete
+  Replace
 </button>
   <script>
-let listElement=document.querySelector('.myList');
+    let h1Element=document.querySelector('.myHeader')
+    let h2Element=document.createElement('h2');
+    h2Element.textContent='This is Ram Sharma'
 let buttonElement=document.querySelector('.myButton');
 buttonElement.addEventListener('click',()=>{
-  listElement.innerHTML=`<ul class="myList">
-    <li>Apple</li>
-    <li>Banana</li>
-  </ul>`;
-});
+document.body.replaceChild(h2Element,h1Element);
+})
   </script>
 </body>
 </html>
