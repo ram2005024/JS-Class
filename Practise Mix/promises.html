@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+// function getData(data){
+//     return new Promise((resolve,reject)=>{
+// console.log(data);
+// reject('Error');
+//     });
+    
+// }
+// getData(50).catch((res)=>{
+//     console.log(res);
+// });
+
+function function1(){
+    return new Promise ((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("Data1");
+        resolve('Data 2 Fetching') ;   
+        },2000);
+
+    });
+
+}
+
+function function2(){
+    return new Promise ((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("Data2");
+    resolve('Data3 Fetching...') ;   
+    },2000);
+        });
+}
+function function3(){
+    return new Promise ((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("Data3");
+            resolve('Fetched All Data')
+    },2000);
+        });
+}
+console.log('Data1 Fetching....')
+// function1().then((res)=>{
+//     console .log(res);
+//     function2().then((res)=>{
+//     console.log(res) ;  
+//     function3().then((res)=>{
+//         console.log(res);
+//     });
+// });
+// });
+
+function1().then((res)=>{
+    console.log(res);
+    return function2();
+})
+.then((res)=>{
+    console.log(res);
+    return function3();
+})
+.then((res)=>{
+    console.log(res);
+});
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "GitHub.copilot",
+  "editor.detectIndentation": false,
+  "editor.find.replaceHistory": "never"
+}
