@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+    //        async  function getCode(data){
+    //          console.log("Getting Item...")
+    //     setTimeout(()=>{
+    //         console.log(data);
+            
+    //         },2000);
+        
+            
+    // }
+    // getCode(3);
+//     console.log("Getting data....");
+// function getData(data){
+
+
+// return new Promise((resolve)=>{
+// setTimeout(()=>{
+// console.log(data);
+// resolve('Fetching another data....')
+// },2000)
+// })
+// }
+// getData(3).then((res)=>{
+// console.log(res);
+// return getData(6)
+// .then((res)=>{
+// console.log(res);
+// return getData(10)
+// .then((res)=>{
+// console.log(res);
+
+// })
+// })
+// })
+
+// using awake and async for the same task
+console.log("Getting data....");
+
+function getData(data){
+
+return new Promise((resolve)=>{
+setTimeout(()=>{
+console.log(data);
+resolve('Fetching another data');
+},2000);
+
+})
+}
+async function giveValue(){
+result=await getData(5);
+console.log(result);
+result=await getData(10);
+console.log(result);
+await getData(20);
+console.log('Data Fetched Successfully');
+}
+giveValue();
+    
+    </script>
+</body>
+</html>
